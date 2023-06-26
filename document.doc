@@ -1,0 +1,39 @@
+Berikut adalah penjelasan mengenai tugas ke-1 FSD batch 7, yaitu membuat landing page dari website harisenin.com :
+
+- Pertama membuat file index.html yang di dalamnya saya menyisipkan syntax penggunaan tailwind CSS dengan metode CDN.
+- Kemudian pada tag <body>, saya memasukkan background dengan menghubungkan ke folder lokal (assets) yang didalamnya saya sudah siapkan banner untuk background dan logo harisenin.com. Untuk menyesuaikan background saya menggunakan flex agar gambar pada backgroundnya flexibel dan menggunakn bg-center agar letak gambar pada background tetap di tengah.
+- Pada element <body> saya membuat element <div> yang bersifat container dan mx-auto agar margin horizontalnya auto dan membungkus <nav> untuk navigasi. 
+- Di dalam element <nav> saya membuat 2 <div> untuk membungkus logo harisenin.com dan list navigasi dan button. pada image saya menggunakan h-10 agar gambar lebar ke atas sebesar 40px (h-10). Pada list saya menggunakan flex agar element list berjejer dan saya menambahkan gap sebesar 16 (64px). Pada button saya juga menggunakan flex dengan gap keduanya sebesar 4 (16px).
+- Pada <div> pembungkus <nav> saya menambahkan mx-auto agar semua element di dalam <nav> bergeser ke tengah dengan margin top 6.
+- Pada tag <nav> saya memasukkan justify-between agar ada jarak antar elemnt di dalam element <nav>
+- Pada tag list saya membuat font berwarna putih dan besar font 2xl
+- Pada button (Daftar) saya membuat text sebesar xl dengan warna emerald-500 yang memiliki outline berwarna emerald-500 juga dengan lebar outline sebesar 5 dan tinggi sebesar 2 dengan background white
+- Pada button (Masuk) juga sama namun dengan warna font white dan background emerald-500
+- Setelah element <nav> saya membuat <div> baru untuk isi content. Di dalamnya berisi text paragraf <p>Update: 31 Maret 2023</p> dengan margin top 6 yang besar fontnya xl
+- Kemudian pada head <h1>3854 Alumni*</h1> dengan margin top 12 yang besar fontnya 8xl
+- Pada head <h2>Meraih Karier Impiannya</h2> dengan margin top 6 yang besar fontnya 6xl
+- Pada kalimat "Walau Beda Jurusan" saya memisahkan dengan element a menjadi 2 kalimat yang memiliki font color yang berbeda dan membuatnya memiliki margin top 6 dengan besar font 6
+- Pada paragraf <p>*Sejak Maret 2021, harisenin.com telah membantu 3854 Indonesia meraih <br> impiannya terlepas dari latar belakang ekonomi dan sosial mereka.</p> saya membungkusnya ke dalam <div> dengan margin top 12
+- Dan pada button terakhir saya membungkusnya juga ke dalam <div> yang flex dan justify-center dengan button yang flex, background berwarna emerald-500, yang px-5 dan py-4 dengan margin topnya 12.
+
+
+
+Berikut adalah penjelasana mengenai tugas ke-2 FSD batch 7, yaitu membuat landing page dengan penerapan Version Control System dan Javascript :
+- Pada tugas kali ini saya menggunakan landing page pada tugas sebelumnya
+- Saya akan membuat tombol <button>Masuk<button> pada landing page ini berfungsi untuk menampilka card/halaman baru untuk login
+- Pertama saya akan membuat sebuah card yang berisi 2 baris element label yaitu email dan password
+- Saya juga membuat fitur checkbox, tombol login, dan beberapa fitur pendukung login dan membuat akun
+- Pada element email dan password, saya membuat id pada masing-masing element agar bisa di lakuan styling dan dapat dipanggil di Javascript
+- Pada pembungkus card juga saya membuat id agar cardnya bisa distyling
+- Untuk cardnya saya menggunakan warna background yang blur
+- Untuk email dan password saya menggunakan border-bottom untuk membuat garis di bawah element input dengan mengatur padding agar text bisa berada di atas garis
+- Pada email saya menggunakan metode DOM untuk membuat logika styling, dimana ketika memasukkan text maka text email akan terangkat ke atas. Yaitu dengan mengambil id email-label menjadi variable emailLabel
+- Kemudian emailLabel dimasukkan ke dalam function validationEmail dimana ketika validationEmail berjalan maka text Email akan terangkat sebanyak 45px dengan menggunakan emailLabel.style.bottom = "45px";
+- Kemudian saya juga melakukan validation terhadap isi email dengan mengambil id email-field yang saya masukkna ke dalam variable emailFiled dengan metode DOM
+- Pada emailFiled saya melakukan pengkondisian di dalam function, dimana jika isi array memiliki symbol yang tidak sama dengan isi match maka akan error ditandai demunculnya kaliman "Email tidak valid";
+- Pada error saya mendefiniskannya ke dalam email-error yang di simpan ke dalam variable emailError dengan metode DOM. Yang dimana jika email error maka border-bottom akan berubah warna menjadi merah dan akan memberikan space ke atas sebesar 70% sehingga text akan turun
+- Dan jika benar maka border-bottom akan mberuabah menjadi warna hijau dan text error akan hilang
+- Pada password juga sama, namun saya hanya menerapkan password-label saja agar text password dapat naik ke atas ketika kita memasukkan password
+- Pada <button>Masuk<button> di landing page saya membuat id popup yang telah terhubung dengan card agar ketika tombol <button>Masuk<button> di klik maka akan menampilkan seluruh isi card. Caranya dengan styling pada css.
+- pada class popoup saya membuat opacity: 0; visibility: hidden; agar popup menjadi tersembunyi / hilang pada halaman. Untuk memunculkannya lagi, saya menggunakan pseudo-classes target, didalamnya dibuat opacity: 1; visibility: visible; sehingga popoup muncul kembali
+- pada tugas ini saya hanya dapat membuat 1 tombol bisa di klik, terimakasih.

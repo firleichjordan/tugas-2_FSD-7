@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tugas 1 | Bootcamp Harisenin Batch 7</title>
+</head>
+<body class="flex bg-center" style="background-image: url('./assets/homepage_banner_3.jpg');">
+    <div class="container mx-auto mt-6">
+        <nav class="flex justify-between items-center">
+            <div>
+                <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_harisenin-white-new.png&w=128&q=75">
+            </div>
+            <div class="flex justify-between items-center">
+                <ul class="text-white text-2xl flex gap-16 mr-4">
+                    <li>Program</li>
+                    <li>Corporate</li>
+                    <li>About</li>
+                </ul>
+                <div class="flex gap-4 ml-4">
+                    <button class="text-xl text-emerald-500 outline outline-emerald-500 px-5 py-2 font-bold bg-white">Daftar</button>
+                    <button class="text-white text-xl outline outline-green-500 px-5 py-2 font-bold bg-emerald-500"><a href="#popup">Masuk</a></button> 
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="flex text-white justify-center text-xl font-bold mt-6">
+                <p>Update: 31 Maret 2023</p>
+            </div>
+            <div class="flex text-white justify-center text-8xl font-bold mt-12">
+                <h1>3854 Alumni*</h1>
+            </div>
+            <div class="flex text-white justify-center text-6xl mt-6">
+                <h2>Meraih Karier Impiannya</h2>
+            </div>
+            <div class="flex text-white justify-center text-6xl mt-6">
+                <h2>
+                    <a href="#" class="text-emerald-500">Walau</a> 
+                    <a href="#" class="text-blue-800">Beda Jurusan.</a>
+                </h2>
+            </div>
+            <div class="flex text-white justify-center text-2xl text-center mt-12">
+                <p>*Sejak Maret 2021, harisenin.com telah membantu 3854 Indonesia meraih <br> impiannya terlepas dari latar belakang ekonomi dan sosial mereka.</p>
+            </div>
+            <div class="flex justify-center">
+                <button class="flex text-white text-xl bg-emerald-500 mt-12 px-5 py-4 rounded-full">Klik Untuk Konsultasikan Masa Depanmu. Gratis!</button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="container-card">
+                <div class="main-box login">
+                    <h1>Login</h1>
+                    <form action="">
+                        <div class="input-box">
+                            <label id="email-label">Email</label>
+                            <input type="email" spellcheck="false" id="email-field" onkeyup="validationEmail()">
+                            <span id="email-error"></span>
+                        </div>
+                        <div class="input-box">
+                            <label id="password-label">Password</label>
+                            <input type="password" spellcheck="false" id="password-field" onkeyup="validationPassword()">
+                            <span id="password-error"></span>
+                        </div>
+                        <div class="check">
+                            <label><input type="checkbox">Ingatkan saya</label>
+                            <a class="text-emerald-500" href="#">Lupa Password?</a>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit" class="text-white text-xl outline outline-green-500 px-12 py-2 rounded-full font-bold bg-emerald-500">Login</button>
+                        </div>
+        
+                        <div class="register">
+                            <p>Belum bergabung? <a href="#" class="text-emerald-500">Buat Akun</a></p>
+                        </div>
+                        <a href="#" class="popup-close">&times;</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<script src="index.js"></script>    
+</body>
+</html>
